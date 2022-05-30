@@ -1,5 +1,6 @@
 <template>
-  <h1>Thank You</h1>
+  <h1>お問い合わせありがとうございました</h1>
+  <h1>1〜3営業日以内にご返信いたします</h1>
 </template>
 
 <script>

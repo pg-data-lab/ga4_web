@@ -83,7 +83,7 @@ export default ({
         "email": this.email,
         "phone": this.phone
       };
-      var url = `https://script.google.com/macros/s/AKfycbyYTVn63ZipvkDyJg-BnLTB_pfJFgF5nvU9QSc0DKY5LQ6a3TYA8kR5wSGGZ3L7rP9M4Q/exec`;
+      var url = `https://script.google.com/macros/s/AKfycbzHRpK1KMIvBdLNfdw-y9y3CnAFtRgleVRHvdj8ygGdxM79VXjaiXyqzr8tLZKaR97mHg/exec`;
       const options = {
         credentials: 'include',
         method: 'POST',
