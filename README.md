@@ -7,7 +7,6 @@ $ npm install -g @vue/cli 5.0.4
 
 #パッケージのインストール
 $ npm install
-
 ```
 
 ### ローカルサーバーの立ち上げ
