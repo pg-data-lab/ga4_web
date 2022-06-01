@@ -10,8 +10,8 @@ const routes = [
   {
     path: '/success',
     name: 'success',
-
-    component: () => import(/* webpackChunkName: "about" */ '../views/SuccessView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/SuccessView.vue'),
+    props: true
   },
   {
     path: '/privacy',

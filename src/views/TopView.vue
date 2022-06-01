@@ -83,7 +83,7 @@ export default ({
         "email": this.email,
         "phone": this.phone
       };
-      var url = `https://script.google.com/macros/s/AKfycbzHRpK1KMIvBdLNfdw-y9y3CnAFtRgleVRHvdj8ygGdxM79VXjaiXyqzr8tLZKaR97mHg/exec`;
+      var url = `https://script.google.com/macros/s/AKfycbyL9ziR8zlOmxu-TzPXS7v4MrYi6hZSxUQBYQO5fcEjkX9vqtdr3ol_8e5M-1j9TlDx4Q/exec`;
       const options = {
         credentials: 'include',
         method: 'POST',
@@ -103,8 +103,8 @@ export default ({
     getForm(e){
       var check_validate = this.checkForm(e);
       if (check_validate){
-        this.postInfo()
-        this.$router.push('/success')
+        //this.postInfo()
+        this.$router.push({ name: 'success' , params:  {msg : "true"}}).catch(() => {});
       }
     }
   }  

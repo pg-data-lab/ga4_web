@@ -7,8 +7,26 @@
 export default {
   name: 'SuccessPage',
   props: {
-    msg: String
-  }
+    msg: {
+      type:String,
+      default:"false"
+    }
+  },
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      vm.initialize(); 
+      next();
+    });
+  },
+  methods: {
+    initialize() {
+      if(this.msg==="true"){
+        return true
+      }else{
+        this.$router.push({ name: 'top' });
+      }
+    },
+  },
 }
 </script>
 
