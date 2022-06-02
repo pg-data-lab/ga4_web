@@ -1,5 +1,12 @@
 <template>
-  <div class="about">
-    <h1>Private Policy</h1>
-  </div>
+プライバシーポリシー
 </template>
+<style>
+li {
+  list-style: none;
+}
+.error {
+  color: red;
+}
+
+</style>
