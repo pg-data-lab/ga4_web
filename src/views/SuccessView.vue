@@ -1,23 +1,50 @@
 <template>
-<!-- hero - start -->
 <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
   <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-    <div class="flex justify-between items-center py-4 md:py-8 mb-4">
-      
-    </div>
-
-    <section class="min-h-96 flex justify-center items-center flex-1 shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative py-16 md:py-20 xl:py-48">
-
+    <header class="flex justify-between items-center ">
+      <!-- nav - start -->
+      <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+        <img src="@/assets/PG_logo.png" alt="Logo" class="text-gray-800 text-2xl lg:text-3xl font-bold text-center ">
+      </div>
+      <!-- nav - end -->
+    </header>
+  </div>
+</div>
+<div class="bg-white mb-96 pt-10">
+  <div class="max-w-screen-2xl">
+    <section class="min-h-96 flex justify-center items-center flex-1 shrink-0 overflow-hidden rounded-lg relative">
       <!-- text start -->
-      <div class="sm:max-w-3xl flex flex-col items-center relative p-4">
-        <h1 class="text-black-800 text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 md:mb-12">お問い合わせ<br>ありがとうございました</h1>
-        <p class="text-black-800 text-lg sm:text-xl text-center mb-4 md:mb-8">1〜3営業日以内にご返信いたします</p>
+      <div class="flex flex-col items-center">
+        <h1 class="orenge success_bottom lg:tracking-widest px-4 finish text-2xl lg:text-2xl text-center lg:mb-10 mb-4 md:mb-6">お問い合わせ完了</h1>
+        <p class="finish tracking-widest lg:mb-12 mb-4 md:mb-6 text-gray-500 md:text-lg mx-auto">送信が完了しました。担当者より連絡させていただきます。</p>
+        <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto">通常1営業日以内に お問い合わせ対応させていただきます。</p>
+        <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto  lg:contents hidden">連絡がない場合は 再度お問い合わせフォームよりご連絡いただくか、03-6206-9608 まで直接ご連絡ください。</p>
+        <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto lg:hidden">連絡がない場合は 再度お問い合わせフォームよりご連絡いただくか、</p>
+        <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto lg:hidden">03-6206-9608 まで直接ご連絡ください。</p>
       </div>
       <!-- text end -->
     </section>
   </div>
 </div>
-<!-- hero - end -->
+<footer class="mt-20">
+  <div class="flex flex-col items-center border-t pt-10">
+    <!-- nav - start -->
+    <div class="flex flex-wrap justify-center md:justify-start md:gap-6">
+      <div class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">
+        <img src="@/assets/PG_rd1.png" alt="Logo" class="text-gray-800 text-2xl lg:text-3xl font-bold text-center ">
+      </div>
+      <div class="">
+        <div class="mb-3">
+          <p class="max-w-screen-md text-white text-center text-sm">GA4に関する質問・疑問にお答えします。</p>
+          <p class="max-w-screen-md text-white text-center text-sm">お気軽にお問い合わせください。</p>
+        </div>
+
+        <p class="max-w-screen-md text-white text-center text-sm  mb-10">03-6206-9608(10:30~19:30/土日・祝除く)</p>
+        <p class="max-w-screen-md text-white text-center text-sm">Copyright © PROJECT GROUP, Inc. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 </template>
 
 <script>
@@ -48,6 +75,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style >
+.success_bottom{
+  border-bottom: 2px solid rgba(248, 125, 3, 1);
+}
+footer{
+  background:rgba(39, 49, 64, 1);
+}
 </style>
