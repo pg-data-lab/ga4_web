@@ -17,14 +17,16 @@
           <p class="finish tracking-widest text-gray-500 md:text-lg mx-auto">具体的にどう変わったのか。</p>
           <p class="finish tracking-widest text-gray-500 md:text-lg mx-auto">導入するにはどうすればよいかを紹介した資料をお送りします。</p>
           
-          <h1 class="finish tracking-widest text-gray-500 text-2xl lg:text-2xl text-gray-500 pt-4"><img src="@/assets/light_icon.png" alt="Logo" class="mb-2.5 mr-2 font-bold text-center inline-block">この資料でわかること</h1>
-          <ul class="max-w-screen-md  text-gray-500 md:text-lg ml-10">
-            <li class="finish">・GoogleAnalytics 4とは</li>
-            <li class="finish">・GoogleAnalytics 4の5つの変更点</li>
-            <li class="finish">・GA4導入を今すぐ行う必要性</li>
-            <li class="finish">・導入サポートの料金費用</li>
-            <li class="finish">・ご発注から計測開始までのスケジュール</li>
-          </ul>
+          <div class="mt-5">
+            <h1 class="finish tracking-widest text-gray-500 text-2xl lg:text-2xl text-gray-500 pt-4"><img src="@/assets/light_icon.png" alt="Logo" class="mb-2.5 mr-2 font-bold text-center inline-block">この資料でわかること</h1>
+            <ul class="max-w-screen-md  text-gray-500 md:text-lg ml-10">
+              <li class="finish tracking-widest">・GoogleAnalytics 4とは</li>
+              <li class="finish tracking-widest">・GoogleAnalytics 4の5つの変更点</li>
+              <li class="finish tracking-widest">・GA4導入を今すぐ行う必要性</li>
+              <li class="finish tracking-widest">・導入サポートの料金費用</li>
+              <li class="finish tracking-widest">・ご発注から計測開始までのスケジュール</li>
+            </ul>
+          </div>
         </div>
 
         <div class="right p-4 shadow-md lg:col-span-2 md:col-span-1 cos-span-1 lg:h-min">
@@ -37,25 +39,25 @@
           <!-- form - start -->
           <form class="max-w-screen-md grid sm:grid-cols-2 gap-4 mx-auto">
             <div class="sm:col-span-2">
-              <label for="company" class="font-label font-bold inline-block text-sm sm:text-base mb-2">会社名</label>
+              <label for="company" class="tracking-wider font-label font-bold inline-block text-sm sm:text-base mb-2">会社名</label>
               <input id="company" name="company" v-model="company" type="text" placeholder="例)  PROJECTGROUP株式会社" class="w-full rounded-lg border-gray-300 border-2 placeholder-gray-300" />
               <p v-if="errors['company']" class="error">{{errors['company']}}</p>
             </div>
 
             <div class="sm:col-span-2">
-              <label for="name" class="font-label font-bold inline-block text-sm sm:text-base mb-2">氏名</label>
+              <label for="name" class="tracking-wider font-label font-bold inline-block text-sm sm:text-base mb-2">氏名</label>
               <input id="name" name="name" v-model="name" type="text" placeholder="例)  お名前" class="w-full rounded-lg border-gray-300 border-2 placeholder-gray-300" />
               <p v-if="errors['name']" class="error">{{errors['name']}}</p>
             </div>
 
             <div class="sm:col-span-2">
-              <label for="email" class="font-label font-bold inline-block text-sm sm:text-base mb-2">メールアドレス</label>
+              <label for="email" class="tracking-wider font-label font-bold inline-block text-sm sm:text-base mb-2">メールアドレス</label>
               <input id="email" name="email" v-model="email" type="email" placeholder="例)  sample@project-g.co.jp" class="w-full rounded-lg border-gray-300 border-2 placeholder-gray-300" />
               <p v-if="errors['email']" class="error">{{errors['email']}}</p>
             </div>
 
             <div class="sm:col-span-2">
-              <label for="phone" class="font-label font-bold inline-block text-sm sm:text-base mb-2">電話番号</label>
+              <label for="phone" class="tracking-wider font-label font-bold inline-block text-sm sm:text-base mb-2">電話番号</label>
               <input id="phone" name="phone" v-model="phone" type="text" placeholder="例)  0362069608" class="w-full rounded-lg border-gray-300 border-2 placeholder-gray-300" />
               <p v-if="errors['phone']" class="error">{{errors['phone']}}</p>
             </div>
@@ -64,7 +66,7 @@
               <p class="privacy font-bold inline-block text-base"><router-link to="/privacy" class=" text-orange-400 border-b border-orange-400">プライバシーポリシー</router-link>に同意の上でお進みください。</p>
             </div>
             <div class="sm:col-span-2 mx-3 ">
-              <input type="button" @click="getForm" value="資料をダンロードする" class="orenge-btn w-full bg-orange-400 hover:bg-yellow-500 active:bg-yellow-500 focus-visible:ring ring-gray-300 text-white xl:text-2xl lg:text-lg text-2xl font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
+              <input type="button" @click="getForm" value="資料をダンロードする" class="tracking-widest orenge-btn w-full bg-orange-400 hover:bg-yellow-500 active:bg-yellow-500 focus-visible:ring ring-gray-300 text-white xl:text-2xl lg:text-lg text-2xl font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
             </div>
           </form>
           <!-- form - end -->
@@ -131,17 +133,16 @@ export default ({
     },
 
     validEmail(email) {
-      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      let re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
     },
-    postInfo(){
-      var body = {
+    getOptions(){
+      let body = {
         "company": this.company,
         "name": this.name,
         "email": this.email,
         "phone": this.phone
       };
-      var url = `https://script.google.com/macros/s/AKfycbzeqKBOCSyNJ4lV15RXL1qqlvmGiZdDu4YZMCrhqp8Aa7eAfYc7cRa13mKLEHr3nQk9zg/exec`;
       const options = {
         credentials: 'include',
         method: 'POST',
@@ -149,7 +150,26 @@ export default ({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
       };
-      fetch(url, options)
+      return options
+    },
+    postInfo(){
+      let options = this.getOptions()
+      let url_on_sheet = `https://script.google.com/macros/s/AKfycbzOZ2-k7szfDElHICG7dbK_DAQXwFwd_Lm-cYfHI8hlwkSa97GuJ1U8rXj_LzBuQGJ68w/exec`;
+
+      fetch(url_on_sheet, options)
+        .then(response => {
+          return response.text()
+        })
+        .then((body) => {
+          console.log(body ? JSON.parse(body) : {})
+        })
+        .catch(err => console.error('error:' + err));
+    },
+    sendMail(){
+      let options = this.getOptions()
+      let url_on_gas = `https://script.google.com/macros/s/AKfycbweHleTVD7rSWNTToe94m3sqoK3plTuzg3c72a_iScaco_IO1y-DDLM7-FWueGdN92r/exec`;
+
+      fetch(url_on_gas, options)
         .then(response => {
           return response.text()
         })
@@ -161,7 +181,8 @@ export default ({
     getForm(e){
       var check_validate = this.checkForm(e);
       if (check_validate){
-        this.postInfo()
+        this.postInfo();
+        this.sendMail();
         this.$router.push({ name: 'success' , params:  {msg : "true"}}).catch(() => {});
       }
     }
