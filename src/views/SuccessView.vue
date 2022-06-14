@@ -15,12 +15,25 @@
     <section class="min-h-96 flex justify-center items-center flex-1 shrink-0 overflow-hidden rounded-lg relative">
       <!-- text start -->
       <div class="flex flex-col items-center">
-        <h1 class="orenge success_bottom lg:tracking-widest px-4 finish text-2xl lg:text-2xl text-center lg:mb-10 mb-4 md:mb-6">お問い合わせ完了</h1>
-        <p class="finish tracking-widest lg:mb-12 mb-4 md:mb-6 text-gray-500 md:text-lg mx-auto">送信が完了しました。担当者より連絡させていただきます。</p>
-        <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto">通常1営業日以内に お問い合わせ対応させていただきます。</p>
-        <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto  lg:contents hidden">連絡がない場合は 再度お問い合わせフォームよりご連絡いただくか、03-6206-9608 まで直接ご連絡ください。</p>
-        <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto lg:hidden">連絡がない場合は 再度お問い合わせフォームよりご連絡いただくか、</p>
-        <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto lg:hidden">03-6206-9608 まで直接ご連絡ください。</p>
+        <h1 class="orenge success_bottom lg:tracking-widest px-4 finish text-lg sm:text-2xl text-center lg:mb-10 mb-4 md:mb-6 sm:mb-10">お問い合わせ完了</h1>
+        <div class="sm:contents hidden">
+          <p class="finish tracking-widest lg:mb-10 mb-4 md:mb-6 text-gray-500 md:text-lg mx-auto">送信が完了しました。担当者より連絡させていただきます。</p>
+          <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto">通常1営業日以内に お問い合わせ対応させていただきます。</p>
+          <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto lg:contents hidden">連絡がない場合は 再度お問い合わせフォームよりご連絡いただくか、03-6206-9608 まで直接ご連絡ください。</p>
+
+          <p class="finish tracking-widest text-gray-500 md:text-lg mt-4 text-xm mx-auto lg:hidden">連絡がない場合は再度お問い合わせフォームよりご連絡いただくか、</p>
+          <p class="finish tracking-widest text-gray-500 md:text-lg text-xm mx-auto lg:hidden">03-6206-9608 まで直接ご連絡ください。</p>
+        </div>
+        
+        <div class="sm:hidden contents text-center mt-4">
+          <p class="finish tracking-widest lg:mb-10 mb-4 md:mb-6 text-gray-500 text-sm mx-auto">送信が完了しました。</p>
+          <p class="finish tracking-widest lg:mb-10 mb-4 md:mb-6 text-gray-500 text-sm mx-auto">担当者より連絡させていただきます。</p>
+          <p class="finish tracking-widest text-gray-500 text-sm mx-auto">通常1営業日以内に</p>
+          <p class="finish tracking-widest text-gray-500 text-sm mx-auto sm:mb-0 mb-4">お問い合わせ対応させていただきます。</p>
+          <p class="finish tracking-widest text-gray-500 text-sm mx-auto">連絡がない場合は</p>
+          <p class="finish tracking-widest text-gray-500 text-sm mx-auto">再度お問い合わせフォームよりご連絡いただくか、</p>
+          <p class="finish tracking-widest text-gray-500 text-sm mx-auto">03-6206-9608 まで直接ご連絡ください。</p>
+        </div>
       </div>
       <!-- text end -->
     </section>

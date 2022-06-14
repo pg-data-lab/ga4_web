@@ -17,6 +17,15 @@ $ npm install
 ### ローカルサーバーの立ち上げ
 ```
 npm run serve
+
+```
+### Firebaseにデプロイ
+```
+#ビルド
+npm run build
+
+#デプロイ
+firebase deploy
 ```
 ## メモ
 ```
