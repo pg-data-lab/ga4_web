@@ -12,12 +12,7 @@ const routes = [
     name: 'success',
     component: () => import(/* webpackChunkName: "about" */ '../views/SuccessView.vue'),
     props: true
-  },
-  {
-    path: '/privacy',
-    name: 'privacy',
-    component: () => import(/* webpackChunkName: "about" */ '../views/PrivacyView.vue')
-  } 
+  }
 ]
 
 const router = createRouter({

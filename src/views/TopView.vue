@@ -73,9 +73,9 @@
             </div>
 
             <div class="sm:col-span-2 text-center">
-              <p class="privacy font-bold inline-block text-base xl:contents hidden"><router-link to="/privacy" class="text-orange-400 border-b border-orange-400">プライバシーポリシー</router-link>に同意の上でお進みください。</p>
+              <p class="privacy font-bold inline-block text-base xl:contents hidden"><a href="https://project-g.co.jp/policy/" class="text-orange-400 border-b border-orange-400">プライバシーポリシー</a>に同意の上でお進みください。</p>
               <div class="xl:hidden contents">
-                <p class="privacy font-bold inline-block text-base"><router-link to="/privacy" class="text-orange-400 border-b border-orange-400">プライバシーポリシー</router-link>に</p>
+                <p class="privacy font-bold inline-block text-base"><a href="https://project-g.co.jp/policy/" class="text-orange-400 border-b border-orange-400">プライバシーポリシー</a>に</p>
                 <p class="privacy font-bold inline-block text-base">同意の上でお進みください。</p>
               </div>
             </div>
