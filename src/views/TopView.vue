@@ -12,7 +12,13 @@
       <div class="grid lg:grid-cols-5 md:grid-cols-4 grid-cos-1 gap-12 xl:mx-32 lg:mx-20 md:mx-20 sm:mx-20 md:mx-10">
         <div class="left w-full lg:col-span-3 md:col-span-2 cos-span-1 sm:text-left text-center">
           <img src="@/assets/GA4.png" alt="img" class="text-gray-800 w-full h-72 text-center mx-auto">
-          <h1 class="orenge lg:tracking-widest  finish text-2xl text-center mb-4 md:mb-6">Google Analytics 4 資料ダウンロード</h1>
+          <h1 class="orenge lg:tracking-widest  finish text-2xl text-center mb-4 md:mb-6 sm:contents hidden">Google Analytics 4 資料ダウンロード</h1>
+
+          <div class="sm:hidden contents">
+            <h1 class="orenge lg:tracking-widest finish text-2xl text-center">Google Analytics 4</h1>
+            <h1 class="orenge lg:tracking-widest finish text-2xl text-center mb-10">資料ダウンロード</h1>
+          </div>
+
           <p class="finish tracking-widest text-gray-500 text-lg mx-auto">GoogleAnalytics 4とはなにか。</p>
           <p class="finish tracking-widest text-gray-500 text-lg mx-auto">具体的にどう変わったのか。</p>
           <p class="finish tracking-widest text-gray-500 text-lg mx-auto sm:contents hidden">導入するにはどうすればよいかを紹介した資料をお送りします。</p>
@@ -23,12 +29,12 @@
           
           <div class="mt-5">
             <h1 class="finish tracking-widest text-gray-500 text-2xl text-gray-500 mb-2"><img src="@/assets/light_icon.png" alt="Logo" class="mb-2.5 mr-2 font-bold text-center inline-block">この資料でわかること</h1>
-            <ul class="max-w-screen-md  text-gray-500 md:text-lg ml-10">
-              <li class="finish sm:tracking-widest tracking-wide">・GoogleAnalytics 4とは</li>
-              <li class="finish sm:tracking-widest tracking-wide">・GoogleAnalytics 4の5つの変更点</li>
-              <li class="finish sm:tracking-widest tracking-wide">・GA4導入を今すぐ行う必要性</li>
-              <li class="finish sm:tracking-widest tracking-wide">・導入サポートの料金費用</li>
-              <li class="finish sm:tracking-widest tracking-wide">・ご発注から計測開始までのスケジュール</li>
+            <ul class="max-w-screen-md  text-gray-500 md:text-lg sm:ml-10 ml-0">
+              <li class="finish sm:tracking-widest tracking-wide">GoogleAnalytics 4とは</li>
+              <li class="finish sm:tracking-widest tracking-wide">GoogleAnalytics 4の5つの変更点</li>
+              <li class="finish sm:tracking-widest tracking-wide">GA4導入を今すぐ行う必要性</li>
+              <li class="finish sm:tracking-widest tracking-wide">導入サポートの料金費用</li>
+              <li class="finish sm:tracking-widest tracking-wide">ご発注から計測開始までのスケジュール</li>
             </ul>
           </div>
         </div>
