@@ -9,17 +9,17 @@
   </header>
 
   <div class="bg-white">
-      <div class="grid lg:grid-cols-5 md:grid-cols-4 grid-cos-1 gap-12 xl:mx-32 lg:mx-20 md:mx-20 sm:mx-20 md:mx-10">
+      <div class="grid lg:grid-cols-5 md:grid-cols-4 grid-cos-1 gap-12 xl:mx-32 lg:mx-20 sm:mx-10 md:mx-10 mx-4">
         <div class="left w-full lg:col-span-3 md:col-span-2 cos-span-1 sm:text-left text-center">
           <img src="@/assets/GA4.png" alt="img" class="text-gray-800 w-full h-72 text-center mx-auto">
-          <h1 class="orenge lg:tracking-widest  finish text-2xl text-center mb-4 md:mb-6 sm:contents hidden">Google Analytics 4 資料ダウンロード</h1>
+          <h1 class="orenge lg:tracking-widest finish sm:text-2xl text-xl text-center mb-4 md:mb-6 sm:contents hidden">Google Analytics 4 資料ダウンロード</h1>
 
           <div class="sm:hidden contents">
             <h1 class="orenge lg:tracking-widest finish text-2xl text-center">Google Analytics 4</h1>
-            <h1 class="orenge lg:tracking-widest finish text-2xl text-center mb-10">資料ダウンロード</h1>
+            <h1 class="orenge lg:tracking-widest finish text-2xl text-center">資料ダウンロード</h1>
           </div>
 
-          <p class="finish tracking-widest text-gray-500 text-lg mx-auto">GoogleAnalytics 4とはなにか。</p>
+          <p class="finish tracking-widest text-gray-500 text-lg mx-auto mt-6">GoogleAnalytics 4とはなにか。</p>
           <p class="finish tracking-widest text-gray-500 text-lg mx-auto">具体的にどう変わったのか。</p>
           <p class="finish tracking-widest text-gray-500 text-lg mx-auto sm:contents hidden">導入するにはどうすればよいかを紹介した資料をお送りします。</p>
           <div class="sm:hidden contents">
@@ -28,7 +28,7 @@
           </div>
           
           <div class="mt-5">
-            <h1 class="finish tracking-widest text-gray-500 text-2xl text-gray-500 mb-2"><img src="@/assets/light_icon.png" alt="Logo" class="mb-2.5 mr-2 font-bold text-center inline-block">この資料でわかること</h1>
+            <h1 class="finish tracking-widest text-gray-500 sm:text-2xl text-xl text-gray-500 mb-2"><img src="@/assets/light_icon.png" alt="Logo" class="mb-2.5 mr-2 font-bold text-center inline-block">この資料でわかること</h1>
             <ul class="max-w-screen-md  text-gray-500 md:text-lg sm:ml-10 ml-0">
               <li class="finish sm:tracking-widest tracking-wide">GoogleAnalytics 4とは</li>
               <li class="finish sm:tracking-widest tracking-wide">GoogleAnalytics 4の5つの変更点</li>
@@ -39,10 +39,10 @@
           </div>
         </div>
 
-        <div class="right p-4 shadow-md lg:col-span-2 md:col-span-2 cos-span-1 md:h-min mx-auto">
+        <div class="right p-4 shadow-md lg:col-span-2 md:col-span-2 cos-span-1 md:h-min mx-auto md:w-full sm:w-10/12 ">
           <!-- text - start -->
           <div class="mb-10 md:mb-16">
-            <h1 class="finish text-gray-800 tracking-widest text-2xl lg:text-2xl text-center mb-4 text-gray-500 mx-auto">カンタン1分で完了</h1>
+            <h1 class="finish text-gray-800 tracking-widest sm:text-2xl text-xl text-center mb-4 text-gray-500 mx-auto">カンタン1分で完了</h1>
           </div>
           <!-- text - end -->
 
@@ -68,19 +68,19 @@
 
             <div class="sm:col-span-2">
               <label for="phone" class="tracking-wider font-label font-bold inline-block text-sm sm:text-base mb-2">電話番号</label>
-              <input id="phone" name="phone" v-model="phone" type="text" placeholder="例)  0362069608" class="w-full rounded-lg border-gray-300 border-2 placeholder-gray-300" />
+              <input id="phone" name="phone" v-model="phone" type="text" placeholder="例)  0362069608" class="w-full rounded-lg border-gray-300 border-2 placeholder-gray-300 " />
               <p v-if="errors['phone']" class="error">{{errors['phone']}}</p>
             </div>
 
             <div class="sm:col-span-2 text-center">
-              <p class="privacy font-bold inline-block text-base xl:contents hidden"><a href="https://project-g.co.jp/policy/" class="text-orange-400 border-b border-orange-400">プライバシーポリシー</a>に同意の上でお進みください。</p>
+              <p class="privacy font-bold inline-block text-sm xl:contents hidden"><a href="https://project-g.co.jp/policy/" class="text-orange-400 border-b border-orange-400">プライバシーポリシー</a>に同意の上でお進みください。</p>
               <div class="xl:hidden contents">
-                <p class="privacy font-bold inline-block text-base"><a href="https://project-g.co.jp/policy/" class="text-orange-400 border-b border-orange-400">プライバシーポリシー</a>に</p>
-                <p class="privacy font-bold inline-block text-base">同意の上でお進みください。</p>
+                <p class="privacy font-bold inline-block text-sm"><a href="https://project-g.co.jp/policy/" class="text-orange-400 border-b border-orange-400">プライバシーポリシー</a>に</p>
+                <p class="privacy font-bold inline-block text-sm">同意の上でお進みください。</p>
               </div>
             </div>
-            <div class="sm:col-span-2 mx-3 ">
-              <input type="button" @click="getForm" value="資料をダンロードする" class="tracking-widest orenge-btn w-full bg-orange-400 hover:bg-yellow-500 active:bg-yellow-500 focus-visible:ring ring-gray-300 text-white xl:text-2xl lg:text-lg md:text-base sm:text-lg font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3 mx-auto">
+            <div class="sm:col-span-2 mx-3 text-center">
+              <input type="button" @click="getForm" value="資料をダウンロードする" class="tracking-widest orenge-btn w-full bg-orange-400 hover:bg-yellow-500 active:bg-yellow-500 focus-visible:ring ring-gray-300 text-white xl:text-2xl lg:text-lg md:text-base sm:text-lg text-sm font-semibold rounded-lg outline-none transition duration-100 px-8 py-3 mx-auto">
             </div>
           </form>
           <!-- form - end -->
@@ -168,7 +168,7 @@ export default ({
     },
     postInfo(){
       let options = this.getOptions()
-      let url_on_sheet = `https://script.google.com/macros/s/AKfycbzOZ2-k7szfDElHICG7dbK_DAQXwFwd_Lm-cYfHI8hlwkSa97GuJ1U8rXj_LzBuQGJ68w/exec`;
+      let url_on_sheet = `https://script.google.com/macros/s/AKfycbz9unt5g1Atky19dsNJz1-v0sl8HtwP9fUnh_jyBu7D1WVCjqKg2dqwrzMTSs7HvNLj5Q/exec`;
 
       fetch(url_on_sheet, options)
         .then(response => {
@@ -181,7 +181,7 @@ export default ({
     },
     sendMail(){
       let options = this.getOptions()
-      let url_on_gas = `https://script.google.com/macros/s/AKfycbweHleTVD7rSWNTToe94m3sqoK3plTuzg3c72a_iScaco_IO1y-DDLM7-FWueGdN92r/exec`;
+      let url_on_gas = `https://script.google.com/macros/s/AKfycbw1tQ6K4068OL5XQ7mxdQm8a1fplK_aNnt_oTYN9raYl4j0Z_17xOhZVl5kLBoEfIvA/exec`;
 
       fetch(url_on_gas, options)
         .then(response => {
