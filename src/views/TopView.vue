@@ -6,11 +6,11 @@
   <div class="bg-white">
     <div class="grid lg:grid-cols-5 md:grid-cols-4 grid-cos-1 gap-12 xl:mx-32 lg:mx-20 sm:mx-10 md:mx-10 mx-4">
       
-      <div class="left w-full lg:col-span-3 md:col-span-2 cos-span-1 sm:text-left text-center">
+      <div class="left w-full lg:col-span-3 md:col-span-2 cos-span-1 text-left">
         <div class="sm:contents hidden">
           <p class="lg:tracking-widest glay text-xl mb-3">サービス資料ダウンロードページ</p>
           <h1 class="tracking-base glay text-3xl">Google Analytics 4 がもっとわかる</h1>
-          <p class="lg:tracking-widest glay text-sm mt-4">本フォーム入力後、メールアドレスあてに自動返信メールにて、</p>
+          <p class="lg:tracking-widest glay text-sm mt-4">本フォーム入力後、メールアドレス宛に自動返信メールにて、</p>
           <p class="lg:tracking-widest glay text-sm mb-8">すぐに資料を添付させて頂きます。</p>
         </div>
 
@@ -18,7 +18,7 @@
           <h1 class="xl:tracking-widest tracking-base glay text-3xl">Google Analytics 4 が</h1>
           <h1 class="xl:tracking-widest tracking-wide glay text-3xl">もっとわかる</h1>
           <p class="lg:tracking-widest glay text-sm mt-3">本フォーム入力後、</p>
-          <p class="lg:tracking-widest glay text-sm">メールアドレスあてに自動返信メールにて、</p>
+          <p class="lg:tracking-widest glay text-sm">メールアドレス宛に自動返信メールにて、</p>
           <p class="lg:tracking-widest glay text-sm mb-8">すぐに資料を添付させて頂きます。</p>
         </div>
         
@@ -29,14 +29,14 @@
             <h1 class="glay tracking-widest orange text-2xl mb-2"><img src="@/assets/light_icon.png" alt="Logo" class="mb-2.5 mr-2 inline-block">この資料でわかること</h1>
             <li class="glay sm:tracking-widest tracking-wide">・Google Analytics 4 とは</li>
             <li class="glay sm:tracking-widest tracking-wide">・Google Analytics 4 の5つの変更点</li>
-            <li class="glay sm:tracking-widest tracking-wide">・GA4導入を今すぐ行う必要性</li>
+            <li class="glay sm:tracking-widest tracking-wide">・導入を今すぐ行う必要性</li>
             <li class="glay sm:tracking-widest tracking-wide">・導入サポートの料金費用</li>
             <li class="glay sm:tracking-widest tracking-wide">・ご発注から計測開始までのスケジュール</li>
           </ul>
         </div>
       </div>
 
-      <div class="right px-4 pt-14 pb-4 lg:col-span-2 md:col-span-2 cos-span-1 md:h-min mx-auto w-auto sdw">
+      <div class="right px-4 pt-14 pb-10 lg:col-span-2 md:col-span-2 cos-span-1 md:h-min mx-auto w-auto sdw">
         <!-- form - start -->
         <form class="max-w-screen-md grid sm:grid-cols-2 gap-4 mx-auto">
           <div class="sm:col-span-2">
