@@ -109,7 +109,8 @@ export default ({
       company: null,
       name: null,
       email: null,
-      phone: null
+      phone: null,
+      service: "GA4"
     };
   },
   methods: {
@@ -146,7 +147,8 @@ export default ({
         "company": this.company,
         "name": this.name,
         "email": this.email,
-        "phone": this.phone
+        "phone": this.phone,
+        "service": this.service
       };
       const options = {
         credentials: 'include',
@@ -159,7 +161,7 @@ export default ({
     },
     postInfo(){
       let options = this.getOptions()
-      let url_on_sheet = `https://script.google.com/macros/s/AKfycbz9unt5g1Atky19dsNJz1-v0sl8HtwP9fUnh_jyBu7D1WVCjqKg2dqwrzMTSs7HvNLj5Q/exec`;
+      let url_on_sheet = process.env.VUE_APP_URL_ON_SHEET;
 
       fetch(url_on_sheet, options)
         .then(response => {
@@ -172,7 +174,7 @@ export default ({
     },
     sendMail(){
       let options = this.getOptions()
-      let url_on_gas = `https://script.google.com/macros/s/AKfycbyLLcj6NTw0UaDYxXZX1EwS62Xrwox9yKXwu-fKRhGpHcB4RgDsLANS7iO8mou9kBeC/exec`;
+      let url_on_gas = process.env.VUE_APP_URL_ON_GAS;
 
       fetch(url_on_gas, options)
         .then(response => {
@@ -194,6 +196,7 @@ export default ({
   }  
 });
 </script>
+
 
 <style>
 .sdw{

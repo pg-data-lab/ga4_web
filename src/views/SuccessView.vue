@@ -63,7 +63,7 @@ export default {
       default:"false"
     }
   },
-  /* beforeRouteEnter(to, from, next) {
+  beforeRouteEnter(to, from, next) {
     next(vm => {
       vm.initialize(); 
       next();
@@ -77,7 +77,7 @@ export default {
         this.$router.push({ name: 'top' });
       }
     },
-  }, */
+  },
 }
 </script>
 
