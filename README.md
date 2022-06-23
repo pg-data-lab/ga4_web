@@ -3,6 +3,7 @@
 ### このアプリについて
 ```
 GA4環境構築に関する問い合わせフォーム
+デプロイ先：firebase
 ```
 
 ### 環境構築
@@ -24,13 +25,17 @@ npm run serve
 #ビルド
 npm run build
 
-#デプロイ
+#デプロイ(project@でfirebaseにログインした後)
 firebase deploy
 ```
 ## メモ
 ```
-チャットワークの通知・スプレッドシートへの書き込みをするコードは以下のGASに記載
-https://script.google.com/u/0/home/projects/1_D84Ri1Ev6IRZozO4U4Ei9jRSYxd8RR6jfBMc2KQ2KG-PFyYCyUWpC4a/edit
+バックエンドの処理は.envのurlのGASで行う
+チャットワークへの通知・シート更新用GAS：VUE_APP_URL_ON_SHEET
+メール送信用GAS：VUE_APP_URL_ON_GAS
+
+GASを更新したあとは.envのURLをGASデプロイした後のURLに更新する
+
 ```
 
 
