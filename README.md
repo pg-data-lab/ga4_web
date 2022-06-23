@@ -34,7 +34,7 @@ firebase deploy
 チャットワークへの通知・シート更新用GAS：VUE_APP_URL_ON_SHEET
 メール送信用GAS：VUE_APP_URL_ON_GAS
 
-GASを更新したあとは.envのURLをGASデプロイした後のURLに更新する
+GASを更新したあとは.envのURLをデプロイした後のGASのurlに更新する
 
 ```
 
